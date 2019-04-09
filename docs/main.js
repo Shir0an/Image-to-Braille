@@ -1,8 +1,8 @@
 var file = null;
 var text = {};
 var max_width = 50;
-var inverted = false;
-var dithering = false;
+var inverted = true;
+var dithering = true;
 var canvas;
 var ctx;
 var charcount;
