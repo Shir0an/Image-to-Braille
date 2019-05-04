@@ -43,7 +43,7 @@
 	</style>
 </head>
 <body ondrop="event.preventDefault(); filechanged(event.dataTransfer.items[0].getAsFile());" ondragover="event.preventDefault()" onpaste="event.preventDefault(); filechanged(event.clipboardData.items[0].getAsFile());">
-	<textarea id="text" readonly></textarea>
+	<textarea style="height: 100%;" tid="text" readonly></textarea>
 	<div id="options">
 		<input id="file" type="file" onchange="filechanged(this.files[0])"><br><br>
 		<span><input type="checkbox" onchange="inverted = this.checked; darkTheme(inverted); filechanged();" checked> Invert</span><br><br>
