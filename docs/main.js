@@ -10,6 +10,7 @@ var charcount;
 var r = 1;
 var g = 1;
 var b = 1;
+var a = 0;
 
 window.onload = function() {
 	text = document.getElementById("text");
@@ -63,7 +64,7 @@ function tobraille(img) {
 	}
 
 	ctx = canvas.getContext("2d");
-	ctx.fillStyle = "#FFFFFF"; //get rid of alpha
+	ctx.fillStyle = "rgb("+a+', '+a+', '+a+')'; //set color of alpha
 	ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 	ctx.mozImageSmoothingEnabled = false;
